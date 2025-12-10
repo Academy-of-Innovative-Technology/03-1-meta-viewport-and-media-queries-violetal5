@@ -1,18 +1,29 @@
 /* ==== CODE ALONG ==== */
 
 /* 1. Create a base style where the page background is light gray by default (for mobile) */
-
+body {
+    background-color: lightgray;
+}
 
 /* 2. Create a media query that targets screens at min-width, with a breakpoint of 768px (commonly used for tablets). Inside this query, target the body background, and change the background color to light blue. */ 
-
+@media (min-width: 768px) {
+    body{
+    background-color: lightblue;
+   }
+}
 /* 3. Create a media query that targets screens at min width of 1024px. Inside this query, change the background color to a light yellow */
-
-
+@media (min-width: 1024px) {
+    body{
+        background-color: lightyellow;
+    }
+}
 
 /* ==== CODE IT SOLO ==== */
 
 /* 1. Create a base style where the <ul> inside the <nav> is hidden by default (for mobile). Use display: none; to hide it. */
-
+ul{
+    display: none;
+}
 
 /* 2. Create a media query that targets screens at a min-width of 768px. At this screen size, do the following:
 
@@ -20,4 +31,23 @@
 - Show the navigation bar
 - Apply Flexbox to the class="sections" */
 
+@media (min-width: 768px) {
+    menu {
+        display: none;
+    }
+    nav {
+      display: block;
+    }
+    .sections{
+        display: flex;
+    }
+}
+
 /* 3. Create a media query that targets screens at a min-width of 1024px. At this screen size, apply your any custom style to the page. */
+@media (min-width: 1024px) {
+    body{
+    font-size: 25px;
+}
+}
+
+
